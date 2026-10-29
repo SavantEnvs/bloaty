@@ -1,0 +1,9 @@
+project: savantenvs/bloaty
+target: fuzz_target
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_target/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_target
+    libfuzzer: true
+    timeout: 10

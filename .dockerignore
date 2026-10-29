@@ -1,0 +1,7 @@
+# Bake the FULL repo (incl. .git) into the commit image. Upstream's tests/testdata ships committed
+# .o/.a/.so fixtures, so unlike the template this must NOT exclude *.o/*.a/*.so.
+build/
+build-*/
+.DS_Store
+*.swp
+*~
